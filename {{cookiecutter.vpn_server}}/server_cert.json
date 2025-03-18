@@ -1,0 +1,14 @@
+{
+    "name": "{{ cookiecutter.name }}-server-cert",
+    "description": "TLS cert for VPN server",
+    "secret_type": "private_cert",
+    "secret_group_id": "{{ cookiecutter.secret_group_id }}",
+    "certificate_template": "{{ cookiecutter.name }}-cert-template",
+    "common_name": "{{ cookiecutter.name }}-server-cert",
+    "ttl": "4190h",
+    "rotation": {
+      "auto_rotate": true,
+      "interval": 1,
+      "unit": "month"
+    }
+  }

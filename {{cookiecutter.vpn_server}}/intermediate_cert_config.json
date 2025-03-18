@@ -1,0 +1,22 @@
+{
+    "config_type": "private_cert_configuration_intermediate_ca",
+    "name": "{{ cookiecutter.name }}-intermediate-ca",
+    "max_ttl": "{{ cookiecutter.max_ttl }}",
+    "crl_expiry": "{{ cookiecutter.crl_expiry }}",
+    "crl_disable": false,
+    "crl_distribution_points_encoded": true,
+    "issuing_certificates_urls_encoded": true,
+    "common_name": "{{ cookiecutter.name }}-intermediate-ca",
+    "format": "pem",
+    "private_key_format": "der",
+    "key_type": "rsa",
+    "key_bits": 4096,
+    "exclude_cn_from_sans": false,
+    "organization": ["{{ cookiecutter.organization }}"],
+    "country": ["{{ cookiecutter.country }}"],
+    "locality": ["{{ cookiecutter.locality }}"],
+    "province": ["{{ cookiecutter.province }}"],
+    "ou": ["{{ cookiecutter.ou }}"],
+    "signing_method": "internal",
+    "issuer": "{{ cookiecutter.name }}-root-ca"
+}

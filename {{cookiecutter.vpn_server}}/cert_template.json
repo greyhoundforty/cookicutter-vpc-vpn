@@ -1,9 +1,9 @@
 {
     "config_type": "private_cert_configuration_template",
-    "name": "rst-cli-cert-template",
-    "certificate_authority": "rst-cli-intermediate-ca",
-    "max_ttl": "8760h",
-    "ttl": "8760h",
+    "name": "{{ cookiecutter.name }}-cert-template",
+    "certificate_authority": "{{ cookiecutter.name }}-intermediate-ca",
+    "max_ttl": "{{ cookiecutter.server_max_ttl }}",
+    "ttl": "{{ cookiecutter.server_ttl }}",
     "allow_localhost": true,
     "allow_any_name": true,
     "allow_ip_sans": false,
@@ -18,9 +18,9 @@
     "key_type": "rsa",
     "use_csr_common_name": false,
     "use_csr_sans": false,
-    "organization": ["Demo"],
-    "country": ["US"],
-    "locality": ["Houston"],
-    "province": ["Texas"],
-    "ou": ["Cloud"]
+    "organization": ["{{ cookiecutter.organization }}"],
+    "country": ["{{ cookiecutter.country }}"],
+    "locality": ["{{ cookiecutter.locality }}"],
+    "province": ["{{ cookiecutter.province }}"],
+    "ou": ["{{ cookiecutter.ou }}"]
   }
