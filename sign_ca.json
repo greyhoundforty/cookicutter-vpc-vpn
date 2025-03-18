@@ -1,0 +1,4 @@
+{
+    "action_type": "private_cert_configuration_action_sign_intermediate",
+    "intermediate_certificate_authority": "rst-demo-intermediate-ca"
+  }

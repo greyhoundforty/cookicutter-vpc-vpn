@@ -1,0 +1,22 @@
+{
+    "config_type": "private_cert_configuration_intermediate_ca",
+    "name": "rst-cli-intermediate-ca",
+    "max_ttl": "43830h",
+    "crl_expiry": "72h",
+    "crl_disable": false,
+    "crl_distribution_points_encoded": true,
+    "issuing_certificates_urls_encoded": true,
+    "common_name": "rst-cli-intermediate-ca",
+    "format": "pem",
+    "private_key_format": "der",
+    "key_type": "rsa",
+    "key_bits": 4096,
+    "exclude_cn_from_sans": false,
+    "organization": ["Demo"],
+    "country": ["US"],
+    "locality": ["Houston"],
+    "province": ["Texas"],
+    "ou": ["Cloud"],
+    "signing_method": "internal",
+    "issuer": "rst-cli-root-ca"
+}
